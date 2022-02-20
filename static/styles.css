@@ -1,0 +1,399 @@
+/* General styles */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #35363b;
+    color: #e8eaed;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+button {
+    background-color: #35363b;
+    border-style: solid;
+    border-color: #e8eaed;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 8px;
+    color:#e8eaed;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#app_container {
+    height: 100%;
+    width: 100%;
+}
+
+.serverMessage {
+    background-color:#1b1b1b;
+    text-align: center;
+}
+
+/* Login menu styles*/
+
+.loginMenu {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.loginMenu .nameFeedback{
+    width:100%;
+    background-color:#1b1b1b;
+    text-align: center;
+    margin-top:15%;
+    margin-bottom:15%;
+}
+
+.loginMenu p {
+    font-size: large;
+}
+
+#nameInputField {
+    width:50%;
+    height:20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10%;
+}
+
+.loginMenu button{
+    width: 40%;
+    height: 10%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Game Lobby styles */
+
+.gameLobby {
+    position: relative;
+    width:  100%;
+    height: auto;
+    overflow: auto;
+    display: -ms-flex; display: -webkit-flex; display: flex; 
+    flex-direction: column;
+    padding-bottom: 25%;
+}
+
+.gameLobby .pregameInfoContainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 100%;
+}
+
+.gameLobby .pregameInfoContainer h2{
+    margin: 0px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.gameLobby .lobbySettings {
+    border-left: 1px solid #858585;
+    padding-left: 2%;
+    text-align: left;
+}
+
+.gameLobby .bottomButtons{
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 2%;
+    height: 10%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.bottomButtons button {
+    font-size: x-large;
+    width: 30%;
+    height: 100%;
+}
+
+.gameLobby .settingsView{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    height:100%;
+    overflow-y: auto;
+}
+.roleMenu {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    height:100%;
+    overflow-y: auto;
+}
+
+.roleMenu .roleSelection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.roleSelection .roleSelectText{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    margin:auto;
+}
+
+.roleSelection .roleCount{
+    float: left,
+}
+
+.roleSelection .plusMinusButtons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 40%;
+    height: 100%;
+}
+
+.plusMinusButtons button {
+    width: 45%;
+    height: 90%;
+    font-size: large;
+}
+
+/* Game (night, voting and results) options*/
+
+.game {
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.infoArea {
+    height: 40%;
+    width: 100%;
+}
+
+.infoArea.roleActive{
+    height: 10%;
+    width: 100%;
+}
+
+infoArea.votingActive {
+    height: auto;
+    max-height: 40%;
+}
+
+.infoArea ul {
+    margin: 0;
+    padding: 0;
+}
+
+.infoArea li {
+    list-style-type: none;
+}
+
+.playArea {
+    height: 60%;
+    width: 100%;
+}
+/* When it is the player's turn, dedicate more space to playArea*/
+.playArea.roleActive {
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.turnTimer {
+    font-size: larger;
+}
+
+/* Role-specific options styling */
+.seerSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.seerSelection button {
+    height: 30%;
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 1.5em;
+}
+
+.werewolfOptions, .seerSelection, .insomniacOptions, 
+.drunkOptions, .minionOptions, .doppelOptions, .robberOptions, 
+.masonOptions, .troublemakerOptions {
+    height: 90%;
+    width: 100%;
+}
+
+.insomniacOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cardDisplay {
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
+.cardRow .cardContainer{
+    height: 100%;
+    width: 30%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bedTimeCard {
+    height: 100%;
+    width: 100%;
+}
+
+/* VotingArea styles */
+
+.votingArea {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoArea .votingActive{
+    height: 40%
+}
+
+.voteButtons {
+    width:100%;
+    height:75%;
+}
+
+.voteButtons .VoteButton {
+    width:30%;
+    height: 20%;
+    margin-left: 1.5%;
+    margin-right:1.5%;
+    margin-bottom: 3%;
+}
+
+.votingArea .endGameButton {
+    margin:auto;
+    margin-top:10%;
+    margin-bottom:4%;
+    width:50%;
+    height:20%;
+    font-size: 1.2em;
+}
+
+.confirmDialog {
+    width:100%;
+    height:100%;
+    font-size: large;
+}
+.confirmDialog button {
+    height: 15%;
+    width: 30%;
+    font-size: large;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.resultsArea {
+    height:100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.resultsArea ul {
+    margin: 0;
+    padding: 0;
+}
+
+.resultsArea button {
+    width:  30%;
+    height: 15%;
+    font-size: large;
+    margin: auto;
+}
+
+
+/* CardButton styles*/
+
+.cardContainer.active .cardInner {
+    transform:rotateY(-180deg)
+}
+
+.cardContainer {
+    display:flex;
+    flex-direction: column;
+    background-color: transparent;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    object-fit:contain;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.cardFace {
+    transform: rotateY(-180deg);
+}
+
+.cardBack, .cardFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cardImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-style:solid;
+    border-width:6px;
+    border-color: #fff;
+    border-radius: 15px;
+}
+
+.autoFlipButtons {
+    height: 90%;
+    width:  100%;
+    display: flex;
+    flex-direction: row;
+}
