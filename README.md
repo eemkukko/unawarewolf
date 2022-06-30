@@ -20,3 +20,5 @@ Back-end:
 Front-end:
   - Client-server communication: Socket.io
   - UI: React.js & vanilla CSS
+
+The app is run in a local network by running the server.py file on the host machine.
